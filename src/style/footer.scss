@@ -1,0 +1,30 @@
+.footer {
+  padding: 35px 0;
+  &__container {
+    display: grid;
+    grid-template-areas:
+    'logo .'
+    'copyright contacts';
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 0;
+    line-height: 20.8px;
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    margin-top: 28px;
+  }
+
+  &__contacts {
+    grid-area: contacts;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+

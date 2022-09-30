@@ -6,124 +6,300 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="icon" href="#" type="image/png">
 
   <title>Услугус - сервис услуг</title>
 </head>
-<body>
-  <header class="header">
-    <div class="container">
-      <img src="img/logo.svg" alt="Логотип Услугус" class="header__logo">
 
-      <form action="" class="header__search search">
-        <input type="text" class="search__input">
-        <button class="search__submit" type="submit">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16.4431 16.4438L20.9994 21.0001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+<body>
+
+<header class="header">
+
+  <h1 class="visually-hidden">Услугус-сервис услуг</h1>
+
+  <div class="container header__container">
+    <img src="img/logo.svg" alt="Логотип Услугус" class="header__logo">
+
+    <form class="header__search search">
+      <input type="text" class="search__input">
+      <button class="search__submit" type="submit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.4431 16.4438L20.9994 21.0001" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+
+    <div class="header__auth">
+      <button class="header__auth-btn header__auth-btn_sign-in">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.81348 15.9375L12.7499 12L8.81348 8.0625" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2.25 12H12.7472" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"/>
+          <path
+            d="M12.75 3.75H18C18.1989 3.75 18.3897 3.82902 18.5303 3.96967C18.671 4.11032 18.75 4.30109 18.75 4.5V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H12.75"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Войти</span>
+      </button>
+
+      <button class="header__auth-btn header__auth-btn_sign-up">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z"
+            stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
+          <path
+            d="M2.90527 20.2491C3.82736 18.6531 5.15322 17.3278 6.74966 16.4064C8.34611 15.485 10.1569 15 12.0002 15C13.8434 15 15.6542 15.4851 17.2506 16.4065C18.8471 17.3279 20.1729 18.6533 21.0949 20.2493"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Регистрация</span>
+      </button>
+    </div>
+  </div>
+
+</header>
+
+
+<main>
+
+  <section class="services">
+    <h2 class="visually-hidden">Список специалистов</h2>
+
+    <div class="container services__container">
+      <div class="services__category category">
+        <button class="category__title">
+          <span>Категории</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
 
-        <div class="header__auth">
-          <button class="header__auth-btn header__auth-btn_sign-in">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.81348 15.9375L12.7499 12L8.81348 8.0625" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2.25 12H12.7472" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M12.75 3.75H18C18.1989 3.75 18.3897 3.82902 18.5303 3.96967C18.671 4.11032 18.75 4.30109 18.75 4.5V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H12.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Войти</span>
-          </button>
-
-          <button class="header__auth-btn header__auth-btn_sign-up">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 15C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 12.3137 8.68629 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10"/>
-              <path d="M2.90527 20.2491C3.82736 18.6531 5.15322 17.3278 6.74966 16.4064C8.34611 15.485 10.1569 15 12.0002 15C13.8434 15 15.6542 15.4851 17.2506 16.4065C18.8471 17.3279 20.1729 18.6533 21.0949 20.2493" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Регистрация</span>
-          </button>
-
-        </div>
-      </form>
-    </div>
-  </header>
-
-  <main>
-   <div class="container">
-     <section class="category">
-       <button class="category__Title">Категории</button>
-       <ul class="category__list">
-         <li class="category__item">
-           <button class="category__btn category__btn-photographer">Фотограф</button>
-         </li>
-         <li class="category__item">
-           <button class="category__btn category__btn-makeup">Визажист</button>
-         </li>
-         <li class="category__item">
-           <button class="category__btn category__btn-masseur">Массажист</button>
-         </li>
-         <li class="category__item">
-           <button class="category__btn category__btn-handyman">Муж на час</button>
-         </li>
-         <li class="category__item">
-           <button class="category__btn category__btn-cosmetologist">Косметолог</button>
-         </li>
-         <li class="category__item">
-           <button class="category__btn category__btn-electrician">Электрик</button>
-         </li>
-         <li class="category__item">
-           <button class="category__btn category__btn-manicurist">Мастер маникюра</button>
-         </li>
-         <li class="category__item">
-           <button class="category__btn category__btn-plumber">Сантехник</button>
-         </li>
-       </ul>
-     </section>
-
-     <section class="services">
-       <h2>Список специалистов</h2>
-
-       <ul class="services__list">
-         <li class="services__item">
-           <article class="service">
-             <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
-
-             <div class="service__present">
-               <h3 class="service__title">Фотограф</h3>
-               <p class="service__name">Иван П.</p>
-             </div>
-
-             <p class="service__price">от 4000 ₽</p>
-
-             <div class="service__review">
-               <div class="service__stars">
-                 <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
-                 <img src="img/star.svg" class="service__star" alt="">
-                 <img src="img/star.svg" class="service__star" alt="">
-                 <img src="img/star.svg" class="service__star" alt="">
-                 <img src="img/star-o.svg" class="service__star" alt="">
-               </div>
-
-               <p class="service__count-review">4</p>
-             </div>
-           </article>
-         </li>
-       </ul>
-     </section>
-   </div>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <img src="img/logo.svg" alt="Логотип Услугус" class="footer__logo">
-      <p class="footer__copyright">© Услугус, 2022</p>
-      <div class="footer__contacts">
-        <p>Design by Anastasia Ilina</p>
-        <p>Tg: <a href="https://t.me/Mrshmallowww" target="_blank">@Mrshmallowww</a></p>
+        <ul class="category__list">
+          <li class="category__item">
+            <button class="category__btn category__btn_photographer">Фотограф</button>
+          </li>
+          <li class="category__item">
+            <button class="category__btn category__btn_makeup">Визажист</button>
+          </li>
+          <li class="category__item">
+            <button class="category__btn category__btn_masseur">Массажист</button>
+          </li>
+          <li class="category__item">
+            <button class="category__btn category__btn_handyman">Муж на час</button>
+          </li>
+          <li class="category__item">
+            <button class="category__btn category__btn_cosmetologist">Косметолог</button>
+          </li>
+          <li class="category__item">
+            <button class="category__btn category__btn_electrician">Электрик</button>
+          </li>
+          <li class="category__item">
+            <button class="category__btn category__btn_manicurist">Мастер маникюра</button>
+          </li>
+          <li class="category__item">
+            <button class="category__btn category__btn_plumber">Сантехник</button>
+          </li>
+        </ul>
       </div>
-    </div>
-  </footer>
 
-  <div class="modal modal_service">
+      <ul class="services__list">
+        <li class="services__item">
+          <article class="service">
+            <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
+
+            <div class="service__present">
+              <h3 class="service__title">Фотограф</h3>
+              <p class="service__name">Иван П.</p>
+            </div>
+
+            <p class="service__price">от 4000 ₽</p>
+
+            <div class="service__review">
+              <div class="service__stars">
+                <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star-o.svg" class="service__star" alt="">
+              </div>
+
+              <p class="service__count-review">4</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="services__item">
+          <article class="service">
+            <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
+
+            <div class="service__present">
+              <h3 class="service__title">Фотограф</h3>
+              <p class="service__name">Иван П.</p>
+            </div>
+
+            <p class="service__price">от 4000 ₽</p>
+
+            <div class="service__review">
+              <div class="service__stars">
+                <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star-o.svg" class="service__star" alt="">
+              </div>
+
+              <p class="service__count-review">4</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="services__item">
+          <article class="service">
+            <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
+
+            <div class="service__present">
+              <h3 class="service__title">Фотограф</h3>
+              <p class="service__name">Иван П.</p>
+            </div>
+
+            <p class="service__price">от 4000 ₽</p>
+
+            <div class="service__review">
+              <div class="service__stars">
+                <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star-o.svg" class="service__star" alt="">
+              </div>
+
+              <p class="service__count-review">4</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="services__item">
+          <article class="service">
+            <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
+
+            <div class="service__present">
+              <h3 class="service__title">Фотограф</h3>
+              <p class="service__name">Иван П.</p>
+            </div>
+
+            <p class="service__price">от 4000 ₽</p>
+
+            <div class="service__review">
+              <div class="service__stars">
+                <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star-o.svg" class="service__star" alt="">
+              </div>
+
+              <p class="service__count-review">4</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="services__item">
+          <article class="service">
+            <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
+
+            <div class="service__present">
+              <h3 class="service__title">Фотограф</h3>
+              <p class="service__name">Иван П.</p>
+            </div>
+
+            <p class="service__price">от 4000 ₽</p>
+
+            <div class="service__review">
+              <div class="service__stars">
+                <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star-o.svg" class="service__star" alt="">
+              </div>
+
+              <p class="service__count-review">4</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="services__item">
+          <article class="service">
+            <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
+
+            <div class="service__present">
+              <h3 class="service__title">Фотограф</h3>
+              <p class="service__name">Иван П.</p>
+            </div>
+
+            <p class="service__price">от 4000 ₽</p>
+
+            <div class="service__review">
+              <div class="service__stars">
+                <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star-o.svg" class="service__star" alt="">
+              </div>
+
+              <p class="service__count-review">4</p>
+            </div>
+          </article>
+        </li>
+
+        <li class="services__item">
+          <article class="service">
+            <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
+
+            <div class="service__present">
+              <h3 class="service__title">Фотограф</h3>
+              <p class="service__name">Иван П.</p>
+            </div>
+
+            <p class="service__price">от 4000 ₽</p>
+
+            <div class="service__review">
+              <div class="service__stars">
+                <img src="img/star.svg" class="service__star" alt="Рейтинг специалиста 4 из 5">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star.svg" class="service__star" alt="">
+                <img src="img/star-o.svg" class="service__star" alt="">
+              </div>
+
+              <p class="service__count-review">4</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__container">
+    <img src="img/logo.svg" alt="Логотип Услугус" class="footer__logo">
+    <p class="footer__copyright">© Услугус, 2022</p>
+    <div class="footer__contacts">
+      <p>Design by Anastasia Ilina</p>
+      <p>Tg: <a href="https://t.me/Mrshmallowww" target="_blank">@Mrshmallowww</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal modal_service">
   <div class="modal__body">
     <div class="service">
       <img src="img/photo.png" alt="Аватар Иван" class="service__avatar">
@@ -156,7 +332,8 @@
 
     <div class="about">
       <h3 class="about__title">О себе</h3>
-      <p class="about__text">Фотограф с 10 летним стажем Основные направления съёмки: Пейзаж, Портретная съёмка, Реклама, Репортаж, Свадебная съёмка, Food фотосъёмка, съёмка автомобилей.
+      <p class="about__text">Фотограф с 10 летним стажем Основные направления съёмки: Пейзаж, Портретная съёмка,
+        Реклама, Репортаж, Свадебная съёмка, Food фотосъёмка, съёмка автомобилей.
         <br>
         Ответственный, пунктуальный, исполнительный.
       </p>
@@ -167,7 +344,7 @@
         <li class="review__item">
           <h4 class="review__">Антон</h4>
 
-          <div class="service__stars stars">
+          <div class="review__stars stars">
             <img src="img/star.svg" class="stars__item" alt="Рейтинг специалиста 5 из 5">
             <img src="img/star.svg" class="stars__item" alt="">
             <img src="img/star.svg" class="stars__item" alt="">
@@ -200,20 +377,35 @@
       </label>
 
       <div class="rating">
-        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z" stroke="#FFD600"/>
+        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z"
+            stroke="#FFD600"/>
         </svg>
-        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z" stroke="#FFD600"/>
+        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z"
+            stroke="#FFD600"/>
         </svg>
-        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z" stroke="#FFD600"/>
+        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z"
+            stroke="#FFD600"/>
         </svg>
-        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z" stroke="#FFD600"/>
+        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z"
+            stroke="#FFD600"/>
         </svg>
-        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z" stroke="#FFD600"/>
+        <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.3401 7.00099L16.34 7.001L16.3419 7.0065C16.3844 7.13479 16.3872 7.27292 16.3502 7.40288C16.3131 7.53281 16.2377 7.64857 16.1339 7.73509C16.1339 7.73511 16.1339 7.73513 16.1338 7.73515L12.9535 10.3821L12.7128 10.5824L12.788 10.8864L13.7976 14.97L13.7976 14.9701L13.7991 14.9758C13.8331 15.1065 13.8268 15.2444 13.7811 15.3715C13.7354 15.4985 13.6524 15.6088 13.543 15.6879L13.5412 15.6892C13.4379 15.7646 13.3144 15.807 13.1866 15.8109C13.0589 15.8149 12.9329 15.7802 12.8252 15.7113L12.8236 15.7103L9.27718 13.4636L9.26501 13.4559L9.25241 13.4489C9.20104 13.4204 9.09336 13.3714 8.95079 13.3849C8.83541 13.3959 8.75188 13.4438 8.71258 13.4704L5.42744 15.5516L5.4266 15.5521C5.29892 15.6333 5.14975 15.6743 4.99849 15.6696C4.84724 15.6648 4.7009 15.6147 4.57853 15.5257L4.57737 15.5248C4.44813 15.4314 4.35012 15.3011 4.29617 15.151C4.24221 15.0009 4.23483 14.838 4.27499 14.6837L4.27567 14.681L5.22599 10.9429L5.30306 10.6398L5.06418 10.4378L1.86935 7.7374L1.86936 7.73739L1.86667 7.73515C1.76284 7.64862 1.68746 7.53284 1.65036 7.40288C1.61326 7.27292 1.61615 7.13479 1.65866 7.0065L1.65869 7.00651L1.66045 7.00099C1.70017 6.87628 1.77656 6.76644 1.87965 6.6858C1.98274 6.60515 2.10774 6.55746 2.23835 6.54893L6.391 6.27922L6.70549 6.25879L6.82272 5.96626L8.39486 2.04304L8.39488 2.04305L8.39682 2.03808C8.44402 1.91654 8.5268 1.81208 8.63432 1.73835C8.74174 1.66469 8.86887 1.62513 8.99911 1.62482H8.99962C8.99965 1.62482 8.99968 1.62482 8.99971 1.62482C9.1303 1.62486 9.25784 1.66434 9.36562 1.73809C9.47342 1.81186 9.55642 1.91647 9.60375 2.03822L9.60374 2.03822L9.60508 2.0416L11.1542 5.9423L11.2702 6.23458L11.5839 6.25653L15.7598 6.54877L15.7622 6.54893C15.8928 6.55746 16.0178 6.60515 16.1209 6.6858C16.2239 6.76644 16.3003 6.87628 16.3401 7.00099Z"
+            stroke="#FFD600"/>
         </svg>
       </div>
 
@@ -224,120 +416,120 @@
   </div>
 </div>
 
-  <div class="modal modal_sign-up">
-    <div class="modal__body">
-      <h3 class="modal__title">Регистрация специалиста</h3>
-      <form class="form form-sign-up">
-        <fieldset>
-          <label class="form__label">
-            <span class="form__text">Имя</span>
-            <input type="text" class="form__input">
-          </label>
-
-          <label class="form__label">
-            <span class="form__text">Фамилия</span>
-            <input type="text" class="form__input">
-          </label>
-
-          <label class="form__label">
-            <span class="form__text">Телефон</span>
-            <input type="text" class="form__input">
-          </label>
-
-          <label class="form__label">
-            <span class="form__text">E-mail</span>
-            <input type="email" class="form__input">
-          </label>
-        </fieldset>
-
-        <fieldset>
-          <label class="form__label">
-            <span class="form__text">Категория</span>
-            <select class="form__select">
-              <option value="" class="form__option">Выберите категорию</option>
-              <option value="photographer" class="form__option">Фотограф</option>
-              <option value="makeup" class="form__option">Визажист</option>
-              <option value="masseur" class="form__option">Массажист</option>
-              <option value="handyman" class="form__option">Муж на час</option>
-              <option value="cosmetologist" class="form__option">Косметолог</option>
-              <option value="electrician" class="form__option">Электрик</option>
-              <option value="manicurist" class="form__option">Мастер маникюра</option>
-              <option value="plumber" class="form__option">Сантехник</option>
-            </select>
-          </label>
-
-          <p class="form__label">
-            <label class="form__text" for="price">Цена</label>
-            <select class="form__select">
-              <option value="from" class="form__option">от</option>
-              <option value="exactly" class="form__option">равно</option>
-              <option value="up to" class="form__option">до</option>
-            </select>
-            <input type="number" id="price">
-          </p>
-
-          <label class="form__label">
-            <span class="form__text">Описание услуг</span>
-            <textarea class="form__textarea"></textarea>
-          </label>
-        </fieldset>
-
-        <fieldset>
-          <p class="form__label">
-            <label class="form__text" for="password">Пароль</label>
-            <span>
-              <input type="password" class="form__input" id="password">
-              <button class="form__password-eye" aria-label="Показать пароль"></button>
-            </span>
-          </p>
-
-          <p class="form__label">
-            <label class="form__text" for="password-repeat">Повторите пароль</label>
-            <span>
-              <input type="password" class="form__input" id="password-repeat">
-              <button class="form__password-eye" aria-label="Показать пароль"></button>
-            </span>
-          </p>
-        </fieldset>
-
-        <div class="form__avatar avatar">
-          <label class="avatar__label">
-            <span class="avatar__text">Установить аватар</span>
-            <span class="avatar__input-wrapper">
-              <input  class="avatar__input" type="file" accept="image/png, image/jpeg">
-            </span>
-          </label>
-
-          <div class="avatar__result"></div>
-        </div>
-        <button class="form__submit">Зарегистрироваться</button>
-      </form>
-        <button class="modal__close"></button>
-    </div>
-  </div>
-
-  <div class="modal modal_sign-in">
-    <div class="modal__body">
-      <h3 class="modal__title">Вход в систему</h3>
-    </div>
+<div class="modal modal_sign-up">
+  <div class="modal__body">
+    <h3 class="modal__title">Регистрация специалиста</h3>
     <form class="form form-sign-up">
       <fieldset>
+        <label class="form__label">
+          <span class="form__text">Имя</span>
+          <input type="text" class="form__input">
+        </label>
+
+        <label class="form__label">
+          <span class="form__text">Фамилия</span>
+          <input type="text" class="form__input">
+        </label>
+
+        <label class="form__label">
+          <span class="form__text">Телефон</span>
+          <input type="text" class="form__input">
+        </label>
+
         <label class="form__label">
           <span class="form__text">E-mail</span>
           <input type="email" class="form__input">
         </label>
+      </fieldset>
+
+      <fieldset>
+        <label class="form__label">
+          <span class="form__text">Категория</span>
+          <select class="form__select">
+            <option value="" class="form__option">Выберите категорию</option>
+            <option value="photographer" class="form__option">Фотограф</option>
+            <option value="makeup" class="form__option">Визажист</option>
+            <option value="masseur" class="form__option">Массажист</option>
+            <option value="handyman" class="form__option">Муж на час</option>
+            <option value="cosmetologist" class="form__option">Косметолог</option>
+            <option value="electrician" class="form__option">Электрик</option>
+            <option value="manicurist" class="form__option">Мастер маникюра</option>
+            <option value="plumber" class="form__option">Сантехник</option>
+          </select>
+        </label>
 
         <p class="form__label">
-          <label class="form__text" for="pass">Пароль</label>
-            <span>
-              <input type="password" class="form__input" id="pass">
+          <label class="form__text" for="price">Цена</label>
+          <select class="form__select">
+            <option value="from" class="form__option">от</option>
+            <option value="exactly" class="form__option">равно</option>
+            <option value="up to" class="form__option">до</option>
+          </select>
+          <input type="number" id="price">
+        </p>
+
+        <label class="form__label">
+          <span class="form__text">Описание услуг</span>
+          <textarea class="form__textarea"></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p class="form__label">
+          <label class="form__text" for="password">Пароль</label>
+          <span>
+              <input type="password" class="form__input" id="password">
+              <button class="form__password-eye" aria-label="Показать пароль"></button>
+            </span>
+        </p>
+
+        <p class="form__label">
+          <label class="form__text" for="password-repeat">Повторите пароль</label>
+          <span>
+              <input type="password" class="form__input" id="password-repeat">
               <button class="form__password-eye" aria-label="Показать пароль"></button>
             </span>
         </p>
       </fieldset>
-      <button class="form__submit">Войти</button>
+
+      <div class="form__avatar avatar">
+        <label class="avatar__label">
+          <span class="avatar__text">Установить аватар</span>
+          <span class="avatar__input-wrapper">
+              <input class="avatar__input" type="file" accept="image/png, image/jpeg">
+            </span>
+        </label>
+
+        <div class="avatar__result"></div>
+      </div>
+      <button class="form__submit">Зарегистрироваться</button>
     </form>
     <button class="modal__close"></button>
   </div>
+</div>
+
+<div class="modal modal_sign-in">
+  <div class="modal__body">
+    <h3 class="modal__title">Вход в систему</h3>
+  </div>
+  <form class="form form-sign-up">
+    <fieldset>
+      <label class="form__label">
+        <span class="form__text">E-mail</span>
+        <input type="email" class="form__input">
+      </label>
+
+      <p class="form__label">
+        <label class="form__text" for="pass">Пароль</label>
+        <span>
+              <input type="password" class="form__input" id="pass">
+              <button class="form__password-eye" aria-label="Показать пароль"></button>
+            </span>
+      </p>
+    </fieldset>
+    <button class="form__submit">Войти</button>
+  </form>
+  <button class="modal__close"></button>
+</div>
 </body>
 </html>
