@@ -1,5 +1,5 @@
 .footer {
-  padding: 35px 0;
+  padding: 55px 0;
   &__container {
     display: grid;
     grid-template-areas:
@@ -16,12 +16,12 @@
 
   &__copyright {
     grid-area: copyright;
-    margin-top: 28px;
+    align-self:end
   }
 
   &__contacts {
     grid-area: contacts;
-    margin-left: auto;
+    justify-self: end;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

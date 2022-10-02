@@ -1,0 +1,47 @@
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  padding: 40px;
+  overflow-y: auto;
+  cursor: pointer;
+  background-color: rgba(#000000, .6);
+
+  &_person {
+    display: flex;
+  }
+
+  &__body {
+    position: relative;
+    cursor: default;
+    margin: auto;
+    max-width: 768px;
+    background-color: #F2F5FC;
+    border-radius: 12px;
+    padding: 24px 20px 48px;
+  }
+
+  &__container {
+    max-width: 632px;
+    margin: 0 auto;
+  }
+
+  &__close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #7B7B7B;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
