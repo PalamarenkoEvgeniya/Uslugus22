@@ -12,8 +12,14 @@ body {
   color: $text;
 }
 
-h1, h2, h3, h4, p, ul, fieldset {
+h1, h2, h3, h4, p, ul {
   margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 ul {

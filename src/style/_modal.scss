@@ -11,6 +11,13 @@
     display: flex;
   }
 
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
   &__body {
     position: relative;
     cursor: default;
@@ -18,13 +25,20 @@
     max-width: 768px;
     background-color: #F2F5FC;
     border-radius: 12px;
-    padding: 24px 20px 48px;
+    padding: 24px  68px 32px;
   }
 
   &__container {
     max-width: 632px;
     margin: 0 auto;
   }
+
+  &__fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px 12px;
+      margin-bottom: 32px;
+  } // дз 2
 
   &__close {
     position: absolute;
