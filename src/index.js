@@ -60,7 +60,10 @@ const init = () => {
 
   password();
   choicesController();
-  avatarController();
+  const crp = avatarController({
+    inputFile: '.avatar__input',
+    uploadResult: '.avatar__result',
+  });
 
 };
 

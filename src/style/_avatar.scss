@@ -7,6 +7,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: max-content;
+    margin-bottom: 20px;
 
     @include mobile {
       flex-direction: column;
