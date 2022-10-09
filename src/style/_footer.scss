@@ -1,30 +1,51 @@
 .footer {
   padding: 55px 0;
+
+  @include tablet {
+    padding-bottom: 30px;
+  }
+
+  @include mobile {
+    padding-bottom: 14px;
+  }
+
   &__container {
     display: grid;
     grid-template-areas:
     'logo .'
     'copyright contacts';
-    grid-template-columns: 1fr 1fr;
-    gap: 14px 0;
-    line-height: 20.8px;
+    gap: 14px;
+
+    @include mobile {
+      grid-template-areas:
+    'logo'
+    'contacts'
+    'copyright';
+      gap: 0;
+    }
   }
 
   &__logo {
     grid-area: logo;
+
+    @include mobile {
+      margin-bottom: 44px;
+    }
   }
 
   &__copyright {
     grid-area: copyright;
-    align-self:end
+    align-self: end;
   }
 
   &__contacts {
     grid-area: contacts;
     justify-self: end;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+    @include mobile {
+      justify-self: start;
+      margin-bottom: 34px;
+    }
   }
 }
 

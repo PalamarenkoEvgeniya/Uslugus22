@@ -1,13 +1,17 @@
 .services {
   padding: 25px 0;
 
-  &__container{
-    display: flex;
-    gap: 20px;
+  @include tablet {
+    padding-top: 5px;
   }
 
-  &__category{
-    flex: 0 0 180px;
+  &__container{
+    display: flex;
+    gap: 30px 20px;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__list {

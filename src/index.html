@@ -13,7 +13,6 @@
 
 
 <body>
-
 <header class="header">
 
   <h1 class="visually-hidden">Услугус-сервис услуг</h1>
@@ -82,28 +81,28 @@
 
         <ul class="category__list">
           <li class="category__item">
-            <button class="category__btn category__btn_photographer">Фотограф</button>
+            <button class="category__btn category__btn_photographer" data-value = 'photographer'>Фотограф</button>
           </li>
           <li class="category__item">
-            <button class="category__btn category__btn_makeup">Визажист</button>
+            <button class="category__btn category__btn_makeup" data-value = 'makeup'>Визажист</button>
           </li>
           <li class="category__item">
-            <button class="category__btn category__btn_masseur">Массажист</button>
+            <button class="category__btn category__btn_masseur" data-value = 'masseur'>Массажист</button>
           </li>
           <li class="category__item">
-            <button class="category__btn category__btn_handyman">Муж на час</button>
+            <button class="category__btn category__btn_handyman" data-value = 'handyman'>Муж на час</button>
           </li>
           <li class="category__item">
-            <button class="category__btn category__btn_cosmetologist">Косметолог</button>
+            <button class="category__btn category__btn_cosmetologist" data-value = 'cosmetologist'>Косметолог</button>
           </li>
           <li class="category__item">
-            <button class="category__btn category__btn_electrician">Электрик</button>
+            <button class="category__btn category__btn_electrician" data-value = 'electrician'>Электрик</button>
           </li>
           <li class="category__item">
-            <button class="category__btn category__btn_manicurist">Мастер маникюра</button>
+            <button class="category__btn category__btn_manicurist" data-value = 'manicurist'>Мастер маникюра</button>
           </li>
           <li class="category__item">
-            <button class="category__btn category__btn_plumber">Сантехник</button>
+            <button class="category__btn category__btn_plumber" data-value = 'plumber'>Сантехник</button>
           </li>
         </ul>
       </div>
@@ -389,12 +388,11 @@
               <img src="img/star-o.svg" class="stars__item" alt="">
             </div>
 
-            <p class="review__text">Попросила Иван сделать фотосессию на фоне достопримечательностей, так как была в
+            <p class="review__text">Попросила Ивана сделать фотосессию на фоне достопримечательностей, так как была в
               отпуске в Калининграде. Всё прошло на позитиве, комфортно и приятно. Фото получились классные! Я очень
               довольна! Рекомендую! Спасибо, Иван!
             </p>
 
-            <button class="review__open review__open_text">Развернуть</button>
           </li>
 
           <li class="review__item">
@@ -408,21 +406,20 @@
               <img src="img/star-o.svg" class="stars__item" alt="">
             </div>
 
-            <p class="review__text review__text_open">Попросила Иван сделать фотосессию на фоне достопримечательностей,
+            <p class="review__text">Попросила Ивана сделать фотосессию на фоне достопримечательностей,
               так как была в
               отпуске в Калининграде. Всё прошло на позитиве, комфортно и приятно. Фото получились классные! Я очень
               довольна! Рекомендую! Спасибо, Иван!
             </p>
 
-            <button class="review__open review__open_text ">Свернуть</button>
           </li>
         </ul>
 
         <button class="review__open review__open_list">Все отзывы</button>
       </div>
 
-      <form class="person__form form form_add-review">
-        <fieldset class="modal__fieldset">
+      <form class="person__form form ">
+        <fieldset class="form__fieldset form__fieldset_add-review">
           <label class="form__label">
             <span class="form__text">Имя</span>
             <input type="text" class="form__input">
@@ -435,12 +432,12 @@
 
           <label class="form__label">
             <span class="form__text">Комментарий</span>
-            <textarea class="form__textarea"></textarea>
+            <span class="form__simple"><textarea class="form__textarea"></textarea></span>
           </label>
         </fieldset>
 
         <div class="form__wrapper-feedback">
-          <div class="rating">
+          <div class=" form__rating rating">
             <svg class="rating__star" width="18" height="18" viewBox="0 0 18 18" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
               <path
@@ -493,7 +490,7 @@
 <div class="modal modal_sign-up">
   <div class="modal__body">
     <h3 class="modal__title">Регистрация специалиста</h3>
-    <form class="form form-sign-up">
+    <form class="form form__sign-up">
       <fieldset class="form__fieldset form__fieldset_user">
         <label class="form__label">
           <span class="form__text">Имя</span>
@@ -520,7 +517,7 @@
         <label class="form__label">
           <span class="form__text">Категория</span>
 
-          <select class="form__select">
+          <select class="form__select form__select_category">
             <option value="" class="form__option">Выберите категорию</option>
             <option value="photographer" class="form__option">Фотограф</option>
             <option value="makeup" class="form__option">Визажист</option>
@@ -538,6 +535,7 @@
 
           <div class="form__wrapper-price">
             <select class="form__select form__select_price">
+              <option value="" class="form__option">от</option>
               <option value="from" class="form__option">от</option>
               <option value="exactly" class="form__option">равно</option>
               <option value="up to" class="form__option">до</option>
@@ -557,7 +555,7 @@
         <div class="form__label">
           <label class="form__text" for="password">Пароль</label>
           <div class="form__password">
-            <input type="password" class="form__input" id="password">
+            <input type="password" class="form__input form__input_password" id="password">
             <button class="form__password-eye" type="button" aria-label="Показать пароль"></button>
           </div>
         </div>
@@ -565,8 +563,8 @@
         <div class="form__label">
           <label class="form__text" for="password-repeat">Повторите пароль</label>
           <div class="form__password">
-            <input type="password" class="form__input" id="password-repeat">
-            <button class="form__password-eye form__password-eye_show " type="button"
+            <input type="password" class="form__input form__input_password" id="password-repeat">
+            <button class="form__password-eye" type="button"
                     aria-label="Показать пароль"></button>
           </div>
         </div>
@@ -603,7 +601,7 @@
 <div class="modal modal_sign-in">
   <div class="modal__body">
     <h3 class="modal__title">Вход в систему</h3>
-    <form class="form form-sign-in">
+    <form class="form form_sign-in">
       <fieldset class="form__fieldset form__fieldset_passwords">
         <label class="form__label">
           <span class="form__text">E-mail</span>
@@ -613,13 +611,13 @@
         <div class="form__label">
           <label class="form__text" for="password-in">Пароль</label>
           <div class="form__password">
-            <input type="password" class="form__input" id="password-in">
+            <input type="password" class="form__input form__input_password" id="password-in">
             <button class="form__password-eye" type="button" aria-label="Показать пароль"></button>
           </div>
         </div>
       </fieldset>
 
-        <button class="form__submit form__submit_sign-in">Войти</button>
+      <button class="form__submit form__submit_sign-in">Войти</button>
 
     </form>
 

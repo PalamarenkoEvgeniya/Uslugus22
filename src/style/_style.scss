@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'PT Sanse', sans-serif;
   background-color: $back;
   color: $text;
 }
@@ -56,9 +56,18 @@ img {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1220px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @include laptop {
+    max-width: 820px;
+  }
+  @include tablet {
+    max-width: 620px;
+  }
+
+
 }
 
 
