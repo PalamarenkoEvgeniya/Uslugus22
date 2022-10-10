@@ -5,6 +5,9 @@ import {selectController} from "./modules/selectController";
 import {password} from "./modules/password";
 import {choicesController} from "./modules/choicesController";
 import {avatarController} from "./modules/avatarController";
+import {getCategory} from "./modules/getCategory";
+import {renderList} from "./modules/renderList";
+import {searchControl} from "./modules/searchControl";
 
 
 const init = () => {
@@ -65,6 +68,9 @@ const init = () => {
     uploadResult: '.avatar__result',
   });
 
+  getCategory();
+  renderList();
+  searchControl();
 };
 
 init();
