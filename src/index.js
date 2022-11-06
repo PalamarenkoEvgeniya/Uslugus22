@@ -71,7 +71,6 @@ const init = async () => {
   password();
   choicesController();
   searchControl();
-  ratingController();
   signUpController(eventModalSignUp.closeModal);
   signInController(eventModalSignIn.closeModal);
 };

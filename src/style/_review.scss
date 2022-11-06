@@ -29,6 +29,16 @@
     background-color: white;
     border-radius: 8px;
     padding: 14px;
+
+    &:nth-child(n+4) {
+      display: none;
+    }
+  }
+
+  &_show-all {
+    .review__item {
+      display: grid;
+    }
   }
 
   &__name {

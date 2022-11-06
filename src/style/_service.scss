@@ -8,11 +8,7 @@
   'contacts contacts review';
   grid-template-columns: 50px 1fr max-content;
   gap: 20px 24px;
-
-
-  @include tablet {
-    gap: 0 24px;
-  }
+  
 
   @include mobile {
     grid-template-areas:
