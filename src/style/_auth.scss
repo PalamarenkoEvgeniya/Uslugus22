@@ -1,0 +1,64 @@
+.auth {
+  display: grid;
+  gap: 5px 9px!important;
+  grid-template-columns: 24px max-content max-content;
+  grid-template-areas:
+  'avatar name edit'
+  '. category .';
+
+  @include mobile {
+    grid-template-columns: max-content;
+    grid-template-areas:
+  'avatar';
+  }
+
+  &__avatar {
+    grid-area: avatar;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__name {
+    grid-area: name;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__category {
+    grid-area: category;
+    font-weight: 300;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__btn-edit {
+    grid-area: edit;
+    position: relative;
+    font-weight: 300;
+    transition: opacity 0.3s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 100%;
+      bottom: 5px;
+      right: 0;
+      left: 0;
+      background-color: $text;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}

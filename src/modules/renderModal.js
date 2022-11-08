@@ -4,8 +4,9 @@ import {store} from "./store";
 import {createStars} from "./createStars";
 import {createReview} from "./createReview";
 import {ratingController} from "./ratingController";
+import {postData} from "./postData";
 
-export const renderModal = (parent, data) => {
+export const renderModal = (parent, data, closeModal) => {
   parent.textContent = '';
 
   console.log(data);
@@ -119,6 +120,7 @@ export const renderModal = (parent, data) => {
   const formReview = createElement('form', {
     className: 'person__form form form_add-review',
   }, container);
+  formReview.dataset.id = data.id;
 
   const fieldset = createElement('fieldset', {
     className: 'form__fieldset form__fieldset_add-review',
@@ -135,6 +137,7 @@ export const renderModal = (parent, data) => {
 
   createElement('input', {
     className: 'form__input',
+    name: 'name',
   }, labelName);
 
   const labelPhone = createElement('label', {
@@ -148,6 +151,7 @@ export const renderModal = (parent, data) => {
 
   createElement('input', {
     className: 'form__input',
+    name: 'phone',
   }, labelPhone);
 
   const labelComment = createElement('label', {
@@ -165,6 +169,7 @@ export const renderModal = (parent, data) => {
 
   createElement('textarea', {
     className: 'form__textarea',
+    name: 'text',
   }, simple);
 
   const wrapperFeedback = createElement('div', {
@@ -189,7 +194,7 @@ export const renderModal = (parent, data) => {
 
   const ratingInput = createElement('input', {
     type: 'hidden',
-    name: 'rating',
+    name: 'stars',
     className: 'rating__input',
   }, rating);
 
@@ -212,4 +217,15 @@ export const renderModal = (parent, data) => {
             stroke-linejoin="round"/>
     </svg>
   `;
+
+    formReview.addEventListener('submit', e => {
+      e.preventDefault();
+
+
+      const formData = new FormData(formReview);
+      const data = Object.fromEntries(formData);
+      postData(`${API_URL}/api/service/comment/${formReview.dataset.id}`, data);
+
+      formReview.reset();
+    })
 }
