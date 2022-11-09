@@ -4,7 +4,7 @@ import {store} from "./store";
 import {createStars} from "./createStars";
 import {createReview} from "./createReview";
 import {ratingController} from "./ratingController";
-import {postData} from "./postData";
+import {commentFormController} from "./commentFormController";
 
 export const renderModal = (parent, data, closeModal) => {
   parent.textContent = '';
@@ -218,14 +218,5 @@ export const renderModal = (parent, data, closeModal) => {
     </svg>
   `;
 
-    formReview.addEventListener('submit', e => {
-      e.preventDefault();
-
-
-      const formData = new FormData(formReview);
-      const data = Object.fromEntries(formData);
-      postData(`${API_URL}/api/service/comment/${formReview.dataset.id}`, data);
-
-      formReview.reset();
-    })
+  commentFormController(formReview, closeModal);
 }

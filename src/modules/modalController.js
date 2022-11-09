@@ -1,3 +1,5 @@
+import {scrollController} from "./scrollController";
+
 export const modalController = ({
                                   modal,
                                   btnOpen,
@@ -46,6 +48,7 @@ export const modalController = ({
         setTimeout(() => {
           modalElem.style.visibility = 'hidden';
           data.handlerCloseModal({modalElem});
+          scrollController.enabledScroll();
         }, time);
 
         window.removeEventListener('keydown', data.closeModal);
@@ -56,7 +59,8 @@ export const modalController = ({
       await data.handlerOpenModal({handler, modalElem});
       modalElem.style.visibility = 'visible';
       modalElem.style.opacity = '1';
-      window.addEventListener('keydown', data.closeModal)
+      window.addEventListener('keydown', data.closeModal);
+      scrollController.disabledScroll();
     }
   }
 
